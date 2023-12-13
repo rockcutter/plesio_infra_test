@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: test-udp-server
+  name: test-udp-server
+  namespace: default
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: test-udp-server
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: test-udp-server
+    spec:
+      containers:
+      - image: us-central1-docker.pkg.dev/hallowed-spider-407610/test-repo/udp-server-test-py:b372e04e51f5d97a3334cd813d793d22c4234149
+        name: udp-server-test-py
+        resources: {}
+status: {}
