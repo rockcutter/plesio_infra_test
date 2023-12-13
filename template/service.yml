@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  labels:
+    app: test-udp-server
+  name: test-udp-server
+  namespace: default
+spec:
+  ports:
+  - port: 8254
+    protocol: UDP
+    targetPort: 8254
+  selector:
+    app: test-udp-server
+  type: LoadBalancer
+status:
+  loadBalancer: {}
