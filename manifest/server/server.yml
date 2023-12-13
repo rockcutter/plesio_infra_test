@@ -19,7 +19,7 @@ spec:
         app: test-udp-server
     spec:
       containers:
-      - image: us-central1-docker.pkg.dev/hallowed-spider-407610/test-repo/udp-server-test-py:73d0438d4ed4536721f4dead40de31fdce93f61e
+      - image: us-central1-docker.pkg.dev/hallowed-spider-407610/test-repo/udp-server-test-py:380cc4b3d0e9d062230f4f0e6ec5d9241cb2d391
         name: udp-server-test-py
         resources: {}
 status: {}
